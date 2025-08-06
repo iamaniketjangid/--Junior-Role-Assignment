@@ -1,0 +1,13 @@
+// Simple Express app to test CI/CD setup
+
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send("🚀 Hello, this is Aniket's Node.js app deployed with CI/CD!");
+});
+
+app.listen(port, () => {
+  console.log(`✅ Server running at http://localhost:${port}`);
+});
